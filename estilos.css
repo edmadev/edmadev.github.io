@@ -4,416 +4,123 @@
     padding: 0;
 }
 
-/*
-APUNTE:   si pongo
-
-capaX > h1{
-
-} 
-
-editaremos el h1 específico de  la capaX, si hubiese mas h1 en capaX, gracias a '>' solo editaremos el h1 específico 
-*/
 html {
     scroll-behavior: smooth;
 }
 
 
 body {
-    zoom: 60%;
     font-family: 'Roboto', sans-serif;
-}
+    display: flex;
+    flex-direction: column;
 
+}
 
 #encabezado {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 1000px;
-    color: white;
+    height: 550px;
     background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)), url("/fotos/portada-final.jpeg");
-
-
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.9)), url("fotos/portada-final.jpeg");
+    color: white;
+    background-position: 50% 22%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 22%;
 
 }
 
-#cabecera1 {
+
+#barra-principal {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 20px;
+    height: 50%;
     width: 100%;
-
 }
 
-#cabecera1 section {
-    /* hemos llamado a las secciones de cabecera1 para alinear sus márgenes*/
-    width: 25%;
-    align-items: center;
-}
-
-#cabecera1 h1 {
-    font-size: 35px;
-}
-
-#tit-hermes {
+.nom-empresa {
+    display: flex;
     width: 33.3%;
-}
-
-#navegador {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 33.3%;
-
-}
-
-
-#navegador h1 {
-    font-size: 45px;
-    margin-inline: 2px;
-
-}
-
-
-#vinculos {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#vinculos h1 {
-    font-size: 27px;
-    margin-inline: 3px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-
-
-#cabecera2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 650px;
-}
-
-#cabecera2 h2 {
-    font-size: 70px;
-}
-
-
-
-#flecha {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(72, 79, 89, 1) 100%);
-    border-radius: 45%;
-    box-shadow: 6px 6px 6px 3px;
-
-}
-
-#flecha img {
-    height: 100px;
-}
-
-
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#container h3 {
     font-size: 20px;
 }
+    
 
-#tit-caja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    font-size: 40px;
-}
-
-
-#caja1 {
+.selector {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 70%;
-}
-
-.caja {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 1%;
-    height: 400px;
-    width: 350px;
-}
-
-
-
-
-
-
-.portada-caja1 img {
-    height: 340px;
-    width: 350px;
-    border-radius: 15px;
-
-
-}
-
-.descrip-caja1 {
-    text-align: start;
-}
-
-
-#caja2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-}
-
-#contenedor-caja-lateral {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: rgb(228, 228, 228);
-    border-radius: 25px;
-    height: 1300px;
-}
-
-
-
-.caja-esp-titulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-}
-
-
-.caja-esp-titulo h2 {
-    font-size: 30px;
-}
-
-
-.submini-caja {
-    height: 250px;
-    width: 250px;
-    border-radius: 10%;
-}
-
-
-.mini-portada1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 10%;
-    background-size: cover;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url(fotos/lateral/l1.jpeg);
-}
-
-.mini-portada2 {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-around;
-
-    height: 250px;
-    width: 250px;
-    border-radius: 10%;
-    background-size: cover;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url(fotos/lateral/l2.jpeg);
-}
-
-.mini-portada3 {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 10%;
-    background-size: cover;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url(fotos/lateral/l3.jpeg);
-}
-
-.mini-portada4 {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 10%;
-    background-size: cover;
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)), url(fotos/lateral/l4.jpg);
-}
-
-.boton-recomendado {
-    font-size: 17px;
-    background-color: black;
-    width: 230px;
-    opacity: 85%;
-    text-align: center;
-    border-radius: 5px;
-
-}
-
-
-#mini-cajas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 1675.38px;
-}
-
-
-#contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(34, 34, 34);
-    margin-top: 50px;
-    height: 800px;
-}
-
-#contenedor-footer {
-    border-style: solid;
-    border-width: 10px;
-    border-radius: 20px;
-    box-shadow: 15px 10px 9px ;
-    background-color: rgb(241, 241, 241);
-}
-
-
-.tit-contacto h1 {
-    font-size: 50px;
-    color: aliceblue;
-    margin-bottom: 5%;
-}
-
-.contenedor-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 1000px;
-    height: 100px;
-}
-
-.texto-seccion {
-    display: flex;
-    border-style: solid;
-    border-width: 0.1px;
-
-    align-items: center;
-    justify-content: space-around;
-    width: 20%;
-    height: 50%;
-}
-
-.contenedor-contacto h1 {
-    font-size: 17px;
-}
-
-.cuadro-intro-texto {
-    text-align: center;
-    border-radius: 7px;
-    height: 50%;
-    width: 30%;
-}
-
-.texto-email {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-style: solid;
-    border-width: 0.1px;
-
-    width: 20%;
-    height: 50%;
-}
-
-/*el cuadro de correo electronico debe tener más espacio ya que suelen ser más grandes que un número de telefono*/
-.cuadro-email {
-    text-align: center;
-    height: 50%;
-    width: 40%;
-    border-radius: 7;
-
-}
-
-.texto-telefono {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-style: solid;
-    border-width: 0.1px;
-    width: 20%;
-    height: 50%;
-}
-
-
-.cuadro-telefono {
-    text-align: center;
-    height: 50%;
-    border-radius: 7%;
-    width: 20%;
-}
-
-
-
-.contenedor-dudas {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 100%
-}
-
-.texto-dudas {
-    display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 25px;
-    height: 12%;
-    border-style: solid;
-    border-width: 1px;
-}
-
-
-.cuadro-dudas {
-    height: 100%;
-    vertical-align: top;
-    border-radius: 10px;
-
+    width: 33.3%;
 }
 
 button{
-    height: 70px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+    border: none; /* Elimina el borde */
+    background-color: transparent; /* Establece el fondo como transparente */
+}
+
+.espacio{
+    display: flex;
+    width: 33.3%;
+}
+
+#encabezado h2{
+font-size: 30px;
+text-align: center;
+}
+
+
+
+
+
+
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+
+}
+
+#comprar {
+
+    height: 50%;
+    width: 90%;
+    background-color: rgb(46, 46, 107);
+}
+
+#titulo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#alquilar {
+    height: 50%;
+    width: 90%;
+    background-color: blue;
+}
+
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#cards .card {
+    margin-bottom: 20px;
+    height: 250px;
+    width: 250px;
+    background-color: brown;
 }
