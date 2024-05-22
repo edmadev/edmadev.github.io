@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+APUNTE:   si pongo
+
+capaX > h1{
+
+} 
+
+editaremos el h1 específico de  la capaX, si hubiese mas h1 en capaX, gracias a '>' solo editaremos el h1 específico 
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#encabezado {
+    height: 1000px;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url("/fotos/portada-final.jpeg");
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 22%;
+
+}
+
+#cabecera1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#cabecera1 section{         /* hemos llamado a las secciones de cabecera1 para alinear sus márgenes*/
+    width: 25%;
+    align-items: center;
+}
+
+#cabecera1 h1 {
+    font-size: 35px;
+}
+
+#tit-hermes{
+    width: 33.3%;
+}
+
+#navegador {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33.3%;
+
+}
+
+
+#navegador h1 {
+    font-size: 45px;
+    margin-inline: 2px;
+
+}
+
+
+#vinculos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#vinculos h1{
+    font-size: 30px;
+    margin-inline: 3px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+
+
+#cabecera2{
+    display: flex;
+    height: 900px;
+    justify-content: center;
+    align-items: center;    
+}
+
+#cabecera2 h2{
+    font-size: 70px;
+}
+
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#tit-caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+}
+
+
+#caja1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: blueviolet;
+    width: 90%;
+}
+
+.caja {
+    display: flex;
+    margin: 1%;
+    height: 400px;
+    width: 350px;
+    background-color: antiquewhite;
+}
+
+
+#caja2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#contacto{
+    display: flex;
+    background-color: aqua;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+}
